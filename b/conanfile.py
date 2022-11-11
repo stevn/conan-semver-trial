@@ -29,7 +29,7 @@ class SemverBConan(ConanFile):
         cmake_layout(self)
 
     def requirements(self):
-        self.requires("semver_a/[~1.0.0]")
+        self.requires("semver_a/[>=1.0.0 <2]")
 
     def generate(self):
         tc = CMakeToolchain(self)
