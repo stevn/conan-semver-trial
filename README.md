@@ -86,6 +86,10 @@ In "super/conanfile.py", replace:
     self.requires("semver_a/[>=1.1.0 <2]")
     self.requires("semver_b/[>=1.0.0 <2]")
 
+### Branch
+
+See branch `workaround` where these patches have been applied.
+
 ## Conclusion
 
 The behavior of Conan seems inconsistent in this case. The version range using tilde sign should probably behave like this workaround does.
